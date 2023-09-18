@@ -1,0 +1,48 @@
+stages:
+  - SBOM creation
+  - Automated software composition analysis
+  - Automated container scanning
+  - Scan artifact and source code repositories (jouw repo bevat toch geen secrets?)
+  - Automated static testing
+  - Automated dynamic testing
+  - Securing the CI/CD pipeline (jouw CI/CD server draait toch niet als root?)
+  - Secret manager (bv. via Hashicorp Vault)
+  - Code integrity protection (e.g. by signing the code)
+
+SBOM creation:
+  stage: SBOM creation
+  script:
+    - echo "Building the project..."
+
+Automated software composition analysis:
+  stage: automated software composition analysis
+  script:
+    - echo "Running tests..."
+Automated container scanning:
+  stage: automated container scanning
+  script:
+    - echo "Deploying to staging environment..."
+Scan artifact and source code repositories:
+  stage: scan artifact and source code repositories
+  script:
+    - echo "Deploying to production environment..."
+Automated static testing:
+  stage: automated static testing
+  script:
+    - echo "Deploying to production environment..."
+Automated dynamic testing:
+  stage: automated dynamic testing
+  script:
+    - echo "Deploying to production environment..."
+Securing the CI/CD pipeline:
+  stage: securing the CI/CD pipeline
+  script:
+    - echo "Deploying to production environment..."
+Secret manager:
+  stage: secret manager
+  script:
+    - echo "Deploying to production environment..."
+Code integrity protection:
+  stage: code integrity protection
+  script:
+    - echo "Deploying to production environment..."
